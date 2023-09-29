@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100vw;
+	height: 50vh;
+	overflow-x: hidden;
+}
+.fidget-container{
+	height:fit-content;
+	padding:10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#fidget-spinner{
+	width: 200px;
+	height: auto;
+}
+#fidget-spinner:hover{
+	animation: spin infinite 0.5s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
